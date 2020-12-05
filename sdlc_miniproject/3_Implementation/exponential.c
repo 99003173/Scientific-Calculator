@@ -2,8 +2,9 @@
 #include <math.h>
 int main()
 {
-  double x = 12.0, result;
+  double x = 8.0, result;
   result = exp(x);
-  printf("Exponential of %.2lf = %.2lf", x, result);
-  return 0;
+  double log_value = log(x);
+  double log10_value = log10(x);
+  return result;
 }
