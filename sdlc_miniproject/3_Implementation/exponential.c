@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-int main()
+int exponent()
 {
   double x = 8.0, result;
   result = exp(x);
