@@ -64,12 +64,12 @@ int rem(int a,int b)
     return a%b;
 }
 
-float exponent(int x)
+float exponent(float x)
 {
   return exp(x);
 }
 
-float natural_logarithm(int x)
+float natural_logarithm(float x)
 {
   return log10(x);
 }
@@ -78,7 +78,7 @@ float squareroot(float x)
 {
     return sqrt(x);
 }
-float logarithm(int x)
+float logarithm(float x)
 {
   return log10(x);
 }
