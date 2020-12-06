@@ -22,4 +22,5 @@ int main()
                 goto abc;
         case 4: exit(0);
     }
+    test_main();
 }

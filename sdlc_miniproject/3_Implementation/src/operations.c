@@ -73,12 +73,16 @@ float natural_logarithm(int x)
   return log10(x);
 }
 
+float squareroot(float x)
+{
+    return sqrt(x);
+}
 float logarithm(int x)
 {
   return log10(x);
 }
 
-int power(int x,int y)
+float power(float x,float y)
 {
   return  pow(x,y);
 }
@@ -111,16 +115,16 @@ int variance(int a[],int n)
     return sqDiff / n;
 }
 
-float standardDeviation(int arr[],n)
+float standardDeviation(int arr[],int n)
 {
-  return sqrt(variance(arr));
+  return sqrt(variance(arr,n));
 
 }
 
 int menu_option(int s)
 {
-    int a,b,st,sa,d[10],n;
-    float angle,value,ang,val;
+    int a,b,st,sa,n;
+    float angle,value,ang,val,e,f,d[10];
 
     switch(s)
     {
@@ -137,41 +141,42 @@ int menu_option(int s)
                 switch(st)
                 {
                         case 1: printf("Angle :");
-                                scanf("%lf",&angle);
+                                scanf("%f",&angle);
                                 val=sine(angle);
-                                printf("Sine of %lf is : %lf",angle,val);
+                                printf("Sine of %f is : %f",angle,val);
                                 break;
 
                         case 2: printf("Angle :");
-                                scanf("%lf",&angle);
+                                scanf("%f",&angle);
                                 val=cosine(angle);
-                                printf("Cosine of %lf is : %lf",angle,val);
+                                printf("Cosine of %f is : %f",angle,val);
                                 break;
 
                         case 3: printf("Angle :");
-                                scanf("%lf",&angle);
+                                scanf("%f",&angle);
                                 val=tangent(angle);
-                                printf("Tangent of %lf is : %lf",angle,val);
+                                printf("Tangent of %f is : %f",angle,val);
                                 break;
 
                         case 4: printf("Value :");
-                                scanf("%lf",&value);
+                                scanf("%f",&value);
                                 ang=sine_inv(value);
-                                printf("Sine Inverse of %lf is : %lf",value,ang);
+                                printf("Sine Inverse of %f is : %f",value,ang);
                                 break;
 
                         case 5: printf("Value :");
-                                scanf("%lf",&value);
+                                scanf("%f",&value);
                                 ang=sine_inv(value);
-                                printf("Cosine Inverse of %lf is : %lf",value,ang);
+                                printf("Cosine Inverse of %f is : %f",value,ang);
                                 break;
 
                         case 6: printf("Value :");
-                                scanf("%lf",&value);
+                                scanf("%f",&value);
                                 ang=sine_inv(value);
-                                printf("Tangent Inverse of %lf is : %lf",value,ang);
+                                printf("Tangent Inverse of %f is : %f",value,ang);
                                 break;
                 }
+                break;
         case 2: printf("\n\t\t\t Choose Arthmetic Operation");
                 printf("\n\t\t\t 1)Add");
                 printf("\n\t\t\t 2)Subtract");
@@ -201,6 +206,7 @@ int menu_option(int s)
                         case 5: printf("Remainder of %d & %d to get %d",a,b,rem(a,b));
                                 break;
                 }
+                break;
         case 3: printf("\n\t\t\t Choose Other Operation");
                 printf("\n\t\t\t 1)Exponential");
                 printf("\n\t\t\t 2)Natural Logarithm");
@@ -210,29 +216,30 @@ int menu_option(int s)
                 printf("\n\t\t\t 6)Mean");
                 printf("\n\t\t\t 7)Variance");
                 printf("\n\t\t\t 8)Standard Deviation");
+                printf("\n\t\t\t 9)Square Root");
                 printf("\n\t\t\t Enter Your Choice:");
                 scanf("%d",&st);
 
                 switch(st)
                 {
-                        case 1: printf("Power :");
-                                scanf("%d",&a);
-                                printf("Exponential value : %lf",exponent(a));
+                        case 1: printf("exponent :");
+                                scanf("%f",&e);
+                                printf("Exponential value : %f",exponent(e));
                                 break;
 
                         case 2: printf("Value :");
-                                scanf("%d",&a);
-                                printf("Natural log of %d : %lf",a,natural_logarithm(a));
+                                scanf("%f",&e);
+                                printf("Natural log of %f : %f",e,natural_logarithm(e));
                                 break;
 
                         case 3: printf("Value :");
-                                scanf("%d",&a);
-                                printf("Decimal log of %d : %lf",a,logarithm(a));
+                                scanf("%f",&e);
+                                printf("Decimal log of %f : %f",e,logarithm(e));
                                 break;
 
                         case 4: printf("Enter number and its power :");
-                                scanf("%d %d",&a,&b);
-                                printf("%d raised to %d is : %d",a,b,power(a,b));
+                                scanf("%f %f",&e,&f);
+                                printf("%f raised to %f is : %f",e,f,power(e,f));
                                 break;
 
                         case 5: printf("Decimal value :");
@@ -266,6 +273,12 @@ int menu_option(int s)
                                 }
                                 printf("Standard Deviation is of %f",standardDeviation(d,n));
                                 break;
+
+                        case 9: printf("Enter value :");
+                                scanf("%f",&e);
+                                printf("Square root of %f is : %f",a,squareroot(e));
+                                break;
                 }
+                break;
     }
 }
