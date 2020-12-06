@@ -71,7 +71,7 @@ float exponent(float x)
 
 float natural_logarithm(float x)
 {
-  return log10(x);
+  return log(x);
 }
 
 float squareroot(float x)
