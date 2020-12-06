@@ -118,6 +118,17 @@ int main(void)
   UNITY_BEGIN();
 
 /* Run Test functions */
+  RUN_TEST(test_sine);
+  RUN_TEST(test_cosine);
+  RUN_TEST(test_tangent);
+  RUN_TEST(test_sine_inv);
+  RUN_TEST(test_cosine_inv);
+  RUN_TEST(test_tangent_inv);  
+  RUN_TEST(test_add);
+  RUN_TEST(test_subtract);
+  RUN_TEST(test_multiply);
+  RUN_TEST(test_divide);
+  RUN_TEST(test_rem);
   RUN_TEST(test_exponent);
   RUN_TEST(test_variance);
   RUN_TEST(test_natural_log);
