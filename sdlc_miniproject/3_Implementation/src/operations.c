@@ -276,7 +276,7 @@ int menu_option(int s)
 
                         case 9: printf("Enter value :");
                                 scanf("%f",&e);
-                                printf("Square root of %f is : %f",a,squareroot(e));
+                                printf("Square root of %f is : %f",e,squareroot(e));
                                 break;
                 }
                 break;
