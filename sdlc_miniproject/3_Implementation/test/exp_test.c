@@ -7,6 +7,16 @@
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
+float sine (float angle);
+float cosine (float angle);
+float tangent (float angle);
+float sine_inv (float val);
+float cosine_inv (float val);
+float tangent_inv (float val);
+int add(int a,int b);
+int subtract(int a,int b);
+int multiply(int a,int b);
+int rem(int a,int b);
 float exponent(float x);
 float natural_logarithm(float x);
 float logarithm(float x);
