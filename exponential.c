@@ -34,10 +34,25 @@ double Mean(int a[], int n)
       sum += a[i];
   return (double)sum / (double)n;
 }
+int variance(int a[], int n)
+{
+  int sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += a[i];
+    double mean = (double)sum /(double)n;
+    double sqDiff = 0;
+    for (int i = 0; i < n; i++)
+        sqDiff += (a[i] - mean)*(a[i] - mean);
+    return sqDiff / n;
+}
+double standardDeviation(int arr[],int n)
+{
+  return sqrt(variance(arr, n));
+}
 int main()
 {
-  int a[]={1,2,3};
-  printf("%lf",Mean(a,3));
+  int a[]={1,7,3};
+  printf("%lf",standardDeviation(a,3));
   return 0;
 }
 
