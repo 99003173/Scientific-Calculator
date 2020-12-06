@@ -55,9 +55,24 @@ void test_tangent_inv(void)
 }
 void test_add(void)
 {
-    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(45.000000, tangent_inv(1.0), "values is not Expected");
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(5, add(2,3), "values is not Expected");
 }
-
+void test_subtract(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(5, subtract(8,3), "values is not Expected");
+}
+void test_multiply(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(6, multiply(2,3), "values is not Expected");
+}
+void test_divide(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(5, divide(15,3), "values is not Expected");
+}
+void test_rem(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(5, add(11,6), "values is not Expected");
+}
 void test_exponent(void)
 {
     TEST_ASSERT_EQUAL_FLOAT_MESSAGE(148.413162, exponent(5.0), "values is not Expected");
