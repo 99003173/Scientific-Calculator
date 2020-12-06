@@ -31,7 +31,7 @@ int menu_option(int s);
 
 void test_sine(void)
 {
-    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.500000, sine(30.0), "values is not Expected");
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.5, sine(30.0), "values is not Expected");
 }
 void test_cosine(void)
 {
