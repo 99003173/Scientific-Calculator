@@ -1,37 +1,43 @@
 #include <stdio.h>
 #include <math.h>
-double exponent()
+double exponent(double x)
 {
-  double x = 8.0;
   return exp(x);
 }
-double natural_logarithm()
+double natural_logarithm(double x)
 {
-  double x = 8.0;
   return log10(x);
 }
-double logarithm()
+double squareroot(double x)
 {
-  double x = 8.0;
+    return (sqrt(x));
+}
+double logarithm(double x)
+{
   return log10(x);
 }
-int power()
+double power(double x,double y)
 {
-  int x = 8;
-  int y = 2;
   return  pow(x,y);
 }
-int decimal_to_bin()
+int decimal_to_bin(int decimal)
 {
-  int decimal=10;
   if (decimal== 0)
     return 0;
   else
     return (decimal % 2 + 10*decimal_to_bin(decimal / 2));;
 }
+double Mean(int a[], int n)
+{
+  int sum = 0;
+  for (int i = 0; i < n; i++)
+      sum += a[i];
+  return (double)sum / (double)n;
+}
 int main()
 {
-  printf("%d",decimal_to_bin());
+  int a[]={1,2,3};
+  printf("%lf",Mean(a,3));
   return 0;
 }
 
