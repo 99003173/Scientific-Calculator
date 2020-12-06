@@ -17,6 +17,7 @@ float Mean(int a[], int n);
 int variance(int a[], int n);
 float standardDeviation(int arr[],int n);
 
+
 void test_exponent(void)
 {
     TEST_ASSERT_EQUAL_FLOAT_MESSAGE(148.413162, exponent(5.0), "values is not Expected");

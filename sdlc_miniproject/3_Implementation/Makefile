@@ -2,10 +2,10 @@ PROJECT_NAME = Scientific Calculator
 
 BUILD = build
 
-SRC =src/exponential.c\
+SRC =src/operations.c\
 main.c
 
-TEST_SRC = src/exponential.c\
+TEST_SRC = src/operations.c\
 unity/unity_source.c\
 test/exp_test.c
 
