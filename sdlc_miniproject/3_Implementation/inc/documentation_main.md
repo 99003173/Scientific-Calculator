@@ -1,2 +1,2 @@
-@mainpage Tennis Scoreboard Tracker Application by Shriram M S
-@subpage tennis_scoreboard_functions.h
+@mainpage Scientific Calculator by Team 5
+@subpage operations_test.h
