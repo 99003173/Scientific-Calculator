@@ -35,7 +35,7 @@ void test_sine(void)
 }
 void test_cosine(void)
 {
-    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.5, sine(60.0), "values is not Expected");
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.5, cosine(60.0), "values is not Expected");
 }
 void test_tangent(void)
 {
