@@ -39,6 +39,7 @@ doc:
 
 test:$(TEST_SRC) $(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
 
 runtest:$(TEST_NAME)
 	./$(TEST_OUTPUT)
