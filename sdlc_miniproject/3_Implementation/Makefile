@@ -25,12 +25,12 @@ $(TEST_NAME):test
 .PHONY: run clean test  doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT) -lm
 
 
 BUILD = build
 $(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+	gcc $(SRC) $(INC) -o $(PROJECT_NAME) -lm
 
 run:$(PROJECT_NAME)
 	./${PROJECT_OUTPUT}
@@ -38,7 +38,7 @@ doc:
 	make -C documentation
 
 test:$(TEST_SRC) $(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lm
 	./$(TEST_OUTPUT)
 
 runtest:$(TEST_NAME)
