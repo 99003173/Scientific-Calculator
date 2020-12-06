@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include "operations.h"
 #define PI 3.141
 int menu_options(int a);
  float sine (float angle)

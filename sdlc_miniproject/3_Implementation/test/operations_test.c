@@ -16,6 +16,7 @@ float tangent_inv (float val);
 int add(int a,int b);
 int subtract(int a,int b);
 int multiply(int a,int b);
+int divide(int a,int b);
 int rem(int a,int b);
 float exponent(float x);
 float natural_logarithm(float x);
@@ -27,6 +28,35 @@ float Mean(int a[], int n);
 int variance(int a[], int n);
 float standardDeviation(int arr[],int n);
 int menu_option(int s);
+
+void test_sine(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.500000, sine(30.0), "values is not Expected");
+}
+void test_cosine(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(0.500000, sine(60.0), "values is not Expected");
+}
+void test_tangent(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(-6.405331, tan(30.0), "values is not Expected");
+}
+void test_sine_inv(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(30.000000, sine_inv(0.5), "values is not Expected");
+}
+void test_cosine_inv(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(60.000000, cosine_inv(0.5), "values is not Expected");
+}
+void test_tangent_inv(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(45.000000, tangent_inv(1.0), "values is not Expected");
+}
+void test_add(void)
+{
+    TEST_ASSERT_EQUAL_FLOAT_MESSAGE(45.000000, tangent_inv(1.0), "values is not Expected");
+}
 
 void test_exponent(void)
 {
