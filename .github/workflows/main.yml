@@ -16,4 +16,4 @@ jobs:
     - name: make test
       run: |
         make test -C sdlc_miniproject/3_Implementation/
-        valgrind .sdlc_miniproject/3_Implementation/build/Test_INTERVIEW.out
+        valgrind .sdlc_miniproject/3_Implementation/build/Test_ScientificCalculator.out
