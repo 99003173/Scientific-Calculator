@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "test_header.h"
+int menu_options(int a);
 int main()
 {
     int s;
@@ -22,5 +23,5 @@ int main()
                 goto abc;
         case 4: exit(0);
     }
-    test_main();
+    return 0;
 }

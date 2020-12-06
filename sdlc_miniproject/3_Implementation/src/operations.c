@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #define PI 3.141
-
+int menu_options(int a);
  float sine (float angle)
  {
      float rad=angle*(PI/180);
@@ -123,8 +123,8 @@ float standardDeviation(int arr[],int n)
 
 int menu_option(int s)
 {
-    int a,b,st,sa,n;
-    float angle,value,ang,val,e,f,d[10];
+    int a,b,st,sa,n,d[10];
+    float angle,value,ang,val,e,f;
 
     switch(s)
     {

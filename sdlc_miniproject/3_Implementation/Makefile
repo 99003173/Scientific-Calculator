@@ -1,4 +1,4 @@
-PROJECT_NAME = Scientific Calculator
+PROJECT_NAME = ScientificCalculator
 
 BUILD = build
 
@@ -7,7 +7,7 @@ main.c
 
 TEST_SRC = src/operations.c\
 unity/unity_source.c\
-test/exp_test.c
+test/operations_test.c
 
 INC = -Iunity\
 -Iinc\

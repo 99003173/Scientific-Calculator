@@ -67,7 +67,7 @@ void test_SD(void)
     int array[]={1,7,8,9};
     TEST_ASSERT_EQUAL_FLOAT_MESSAGE(3.000000, standardDeviation(array,4), "values is not Expected");
 }
-int test_main(void)
+int main(void)
 {
 /* Initiate the Unity Test Framework */
   UNITY_BEGIN();
