@@ -281,4 +281,5 @@ int menu_option(int s)
                 }
                 break;
     }
+    return 0;
 }
