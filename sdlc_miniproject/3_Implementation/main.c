@@ -23,5 +23,4 @@ int main()
                 goto abc;
         case 4: exit(0);
     }
-    return 0;
 }
